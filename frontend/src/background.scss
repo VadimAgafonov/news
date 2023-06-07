@@ -1,0 +1,66 @@
+.background__text {
+	.more {
+		position: absolute;
+		top: 81%;
+		left: 44%;
+		color: #fff;
+		font-size: 32px;
+		font-weight: 600;
+		text-transform: uppercase;
+		opacity: 0;
+		transition: opacity 0.3s ease-in-out;
+	}
+	.touch__icon {
+		position: absolute;
+		top: 70%;
+		left: 46.5%;
+		color: #fff;
+		font-size: 32px;
+		opacity: 0;
+		transition: opacity 0.3s ease-in-out;
+	}
+	position: relative;
+	height: 640px;
+	display: flex;
+	flex-direction: column;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		opacity: 0;
+		transition: opacity 0.3s ease-in-out;
+	}
+	&:hover::before {
+		opacity: 1;
+	}
+	&:hover .touch__icon {
+		opacity: 1;
+	}
+	&:hover .more {
+		opacity: 1;
+	}
+
+	.background__title {
+		color: #fff;
+		font-size: 64px;
+		font-weight: 600;
+		line-height: 89px;
+
+		padding-top: 223px;
+		padding-left: 200px;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	.background__about {
+		color: #fff;
+		padding-left: 200px;
+		font-size: 32px;
+		line-height: 51px;
+		font-family: 'Open Sans', sans-serif;
+	}
+}

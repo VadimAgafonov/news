@@ -1,0 +1,36 @@
+@import 'vars.scss';
+
+.container {
+	padding: 50px 200px;
+
+	.header__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.header__top__logo {
+			a {
+				img {
+					width: 390px;
+					height: 75px;
+				}
+			}
+		}
+
+		.header__top__navigation {
+			ul {
+				display: flex;
+				li {
+					list-style-type: none;
+					padding-right: 20px;
+					transition: all 0.3s ease-out;
+
+					&:hover {
+						color: $color;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}

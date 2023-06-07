@@ -1,0 +1,153 @@
+@import 'vars.scss';
+
+.news__title {
+	h1 {
+		font-size: 64px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+
+		margin-bottom: 50px;
+	}
+}
+
+.news {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	.news__blocks {
+		max-width: 40%;
+		padding: 0 20px;
+		.news__blocks__date {
+			margin-bottom: 36px;
+
+			.news__blocks__date__span {
+				font-size: 16px;
+				font-weight: 400;
+				color: #6c6e7b;
+				background-color: #ecf2f5;
+				border-radius: 20px;
+				padding: 6px 18px;
+			}
+		}
+
+		.news__blocks__title {
+			h3 {
+				font-size: 32px;
+				font-weight: 600;
+				color: #000;
+
+				margin-bottom: 30px;
+				cursor: pointer;
+				transition: all 0.3s ease-out;
+				&:hover {
+					color: $color;
+				}
+			}
+		}
+
+		.news__blocks__content {
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 32px;
+
+			margin-bottom: 30px;
+		}
+
+		.news__blocks__btn {
+			margin-bottom: 80px;
+			button {
+				display: inline-block;
+				align-items: center;
+				position: relative;
+				border-radius: 50px;
+				border: none;
+				padding: 16px 55px 16px 40px;
+				border: 1px solid #9b407a;
+				background: none;
+
+				font-size: 16px;
+				font-weight: 600;
+				line-height: 22px;
+				font-family: 'Open Sans', sans-serif;
+				text-transform: uppercase;
+				color: $color;
+				cursor: pointer;
+				transition: all 0.3s ease-out;
+				&:hover {
+					background-color: $color;
+					color: #fff;
+				}
+				&:hover svg {
+					stroke: #fff;
+				}
+				svg {
+					position: absolute;
+					top: 17px;
+					right: 19px;
+					z-index: 1000;
+					width: 20px;
+					height: 20px;
+					transition: all 0.3s ease-out;
+				}
+			}
+		}
+	}
+}
+
+.pagination {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	a {
+		margin-left: 10px;
+		div {
+			.arrow_btn {
+				stroke: $color;
+				transition: all 0.2s ease-out;
+
+				border: 1px solid $color;
+				border-radius: 50px;
+				padding: 18px 40px;
+				&:hover {
+					stroke: #fff;
+					background-color: $color;
+				}
+			}
+		}
+	}
+
+	.num {
+		border: 1px solid $color;
+		border-radius: 50px;
+		padding: 16px 23px;
+		margin-left: 10px;
+		color: $color;
+
+		transition: all 0.3s ease-out;
+
+		&:hover {
+			background-color: $color;
+			color: #fff;
+		}
+	}
+}
+
+.hide {
+	display: none;
+}
+
+.active {
+	background-color: $color;
+	color: #fff !important;
+}
+
+.line {
+	display: block;
+	border: 1px solid #6c6e7b;
+	margin-bottom: 50px;
+}
+.active__nav {
+	color: $color;
+	font-weight: 600;
+}

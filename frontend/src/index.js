@@ -1,0 +1,6 @@
+import './background.scss'
+import './blog.scss'
+import './footer.scss'
+import './header.scss'
+import './index.scss'
+import './news.scss'

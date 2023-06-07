@@ -1,0 +1,364 @@
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/background.scss ***!
+  \**************************************************************************************************************/
+.background__text {
+  position: relative;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+}
+.background__text .more {
+  position: absolute;
+  top: 81%;
+  left: 44%;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.background__text .touch__icon {
+  position: absolute;
+  top: 70%;
+  left: 46.5%;
+  color: #fff;
+  font-size: 32px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.background__text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.background__text:hover::before {
+  opacity: 1;
+}
+.background__text:hover .touch__icon {
+  opacity: 1;
+}
+.background__text:hover .more {
+  opacity: 1;
+}
+.background__text .background__title {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 89px;
+  padding-top: 223px;
+  padding-left: 200px;
+  font-family: "Open Sans", sans-serif;
+}
+.background__text .background__about {
+  color: #fff;
+  padding-left: 200px;
+  font-size: 32px;
+  line-height: 51px;
+  font-family: "Open Sans", sans-serif;
+}
+/*!********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blog.scss ***!
+  \********************************************************************************************************/
+.container span a {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+.container span .blog__announce {
+  color: #6c6e7b;
+}
+
+.blog__title {
+  margin: 30px 0 40px 0;
+}
+.blog__title h1 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 90px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.flex .blog {
+  width: 50%;
+}
+.flex .blog .blog__date {
+  margin-bottom: 46px;
+}
+.flex .blog .blog__date span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #6c6e7b;
+  background-color: #ecf2f5;
+  border-radius: 20px;
+  padding: 6px 18px;
+}
+.flex .blog .blog__about {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #841844;
+  margin-bottom: 40px;
+  padding-right: 50px;
+}
+.flex .blog p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  max-width: 75%;
+  margin-bottom: 50px;
+}
+.flex .blog a button {
+  position: relative;
+  width: 283px;
+  height: 54px;
+  border-radius: 50px;
+  border: none;
+  border: 1px solid #841844;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #841844;
+  transition: all 0.2s ease-out;
+}
+.flex .blog a button:hover {
+  color: #fff;
+  background-color: #841844;
+}
+.flex .blog a button:hover svg polyline {
+  stroke: #fff;
+}
+.flex .blog a button:hover svg line {
+  stroke: #fff;
+}
+.flex .blog a button svg {
+  position: absolute;
+  top: 12.5px;
+  left: 16px;
+  z-index: 1000;
+}
+
+.blog_image {
+  width: 50%;
+}
+.blog_image img {
+  width: 740px;
+  height: 570px;
+  padding-left: 60px;
+}
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/footer.scss ***!
+  \**********************************************************************************************************/
+.footer {
+  padding: 0 200px 50px 200px;
+}
+.footer .line {
+  display: block;
+  border: 1px solid #6c6e7b;
+  margin-bottom: 50px;
+}
+.footer .disc p {
+  margin: 0;
+}
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/header.scss ***!
+  \**********************************************************************************************************/
+.container {
+  padding: 50px 200px;
+}
+.container .header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .header__top .header__top__logo a img {
+  width: 390px;
+  height: 75px;
+}
+.container .header__top .header__top__navigation ul {
+  display: flex;
+}
+.container .header__top .header__top__navigation ul li {
+  list-style-type: none;
+  padding-right: 20px;
+  transition: all 0.3s ease-out;
+}
+.container .header__top .header__top__navigation ul li:hover {
+  color: #841844;
+  text-decoration: underline;
+}
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \*********************************************************************************************************/
+body {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+/*!********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/news.scss ***!
+  \********************************************************************************************************/
+.news__title h1 {
+  font-size: 64px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.news {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.news .news__blocks {
+  max-width: 40%;
+  padding: 0 20px;
+}
+.news .news__blocks .news__blocks__date {
+  margin-bottom: 36px;
+}
+.news .news__blocks .news__blocks__date .news__blocks__date__span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #6c6e7b;
+  background-color: #ecf2f5;
+  border-radius: 20px;
+  padding: 6px 18px;
+}
+.news .news__blocks .news__blocks__title h3 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.news .news__blocks .news__blocks__title h3:hover {
+  color: #841844;
+}
+.news .news__blocks .news__blocks__content {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+.news .news__blocks .news__blocks__btn {
+  margin-bottom: 80px;
+}
+.news .news__blocks .news__blocks__btn button {
+  display: inline-block;
+  align-items: center;
+  position: relative;
+  border-radius: 50px;
+  border: none;
+  padding: 16px 55px 16px 40px;
+  border: 1px solid #9b407a;
+  background: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #841844;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.news .news__blocks .news__blocks__btn button:hover {
+  background-color: #841844;
+  color: #fff;
+}
+.news .news__blocks .news__blocks__btn button:hover svg {
+  stroke: #fff;
+}
+.news .news__blocks .news__blocks__btn button svg {
+  position: absolute;
+  top: 17px;
+  right: 19px;
+  z-index: 1000;
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease-out;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.pagination a {
+  margin-left: 10px;
+}
+.pagination a div .arrow_btn {
+  stroke: #841844;
+  transition: all 0.2s ease-out;
+  border: 1px solid #841844;
+  border-radius: 50px;
+  padding: 18px 40px;
+}
+.pagination a div .arrow_btn:hover {
+  stroke: #fff;
+  background-color: #841844;
+}
+.pagination .num {
+  border: 1px solid #841844;
+  border-radius: 50px;
+  padding: 16px 23px;
+  margin-left: 10px;
+  color: #841844;
+  transition: all 0.3s ease-out;
+}
+.pagination .num:hover {
+  background-color: #841844;
+  color: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+.active {
+  background-color: #841844;
+  color: #fff !important;
+}
+
+.line {
+  display: block;
+  border: 1px solid #6c6e7b;
+  margin-bottom: 50px;
+}
+
+.active__nav {
+  color: #841844;
+  font-weight: 600;
+}

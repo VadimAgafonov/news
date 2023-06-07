@@ -1,0 +1,109 @@
+@import 'vars.scss';
+
+.container {
+	span {
+		a {
+			font-size: 16px;
+			font-weight: 400;
+			font-family: 'Open Sans', sans-serif;
+		}
+		.blog__announce {
+			color: #6c6e7b;
+		}
+	}
+}
+
+.blog__title {
+	margin: 30px 0 40px 0;
+	h1 {
+		font-size: 64px;
+		font-weight: 600;
+		// max-width: 1260px;
+		line-height: 90px;
+	}
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	.blog {
+		width: 50%;
+		.blog__date {
+			margin-bottom: 46px;
+
+			span {
+				font-size: 16px;
+				font-weight: 400;
+				color: #6c6e7b;
+				background-color: #ecf2f5;
+				border-radius: 20px;
+				padding: 6px 18px;
+			}
+		}
+		.blog__about {
+			font-size: 32px;
+			font-weight: 600;
+			line-height: 44px;
+			color: $color;
+			margin-bottom: 40px;
+			padding-right: 50px;
+		}
+		p {
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 32px;
+			max-width: 75%;
+			margin-bottom: 50px;
+		}
+		a {
+			button {
+				position: relative;
+				width: 283px;
+				height: 54px;
+
+				border-radius: 50px;
+				border: none;
+				border: 1px solid $color;
+				cursor: pointer;
+
+				background-color: transparent;
+
+				font-size: 16px;
+				font-weight: 600;
+				line-height: 21px;
+				text-transform: uppercase;
+				color: $color;
+				transition: all 0.2s ease-out;
+
+				&:hover {
+					color: #fff;
+					background-color: $color;
+				}
+				&:hover svg polyline {
+					stroke: #fff;
+				}
+				&:hover svg line {
+					stroke: #fff;
+				}
+
+				svg {
+					position: absolute;
+					top: 12.5px;
+					left: 16px;
+					z-index: 1000;
+				}
+			}
+		}
+	}
+}
+
+.blog_image {
+	width: 50%;
+	img {
+		width: 740px;
+		height: 570px;
+		padding-left: 60px;
+	}
+}
